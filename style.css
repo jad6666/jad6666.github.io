@@ -1,0 +1,57 @@
+body {
+  background-image: url('background.gif'); /* Replace with background image URL */
+  font-family: 'Google Sans', sans-serif;
+  color: #fff; 
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to right, #4CAF50, #00897B); 
+  color: #fff; 
+}
+
+.terminal-container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #000;
+  color: #0f0; 
+  overflow: auto; 
+  border-radius: 5px;
+  display: flex; 
+}
+
+.terminal-output {
+  flex: 1; 
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.cursor-container {
+  margin-left: 10px; 
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #0f0; 
+  animation: blink 0.5s infinite alternate;
+}
+
+.user-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: #0f0; 
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
